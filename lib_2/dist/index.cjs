@@ -19,12 +19,15 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // index.ts
 var lib_2_exports = {};
 __export(lib_2_exports, {
-  createCustomMemo: () => createCustomMemo
+  createCustomMemo: () => createCustomMemo,
+  isServer: () => import_web.isServer
 });
 module.exports = __toCommonJS(lib_2_exports);
 var import_solid_js = require("solid-js");
+var import_web = require("solid-js/web");
 var createCustomMemo = import_solid_js.createMemo;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  createCustomMemo
+  createCustomMemo,
+  isServer
 });

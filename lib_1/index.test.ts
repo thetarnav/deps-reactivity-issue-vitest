@@ -1,6 +1,7 @@
-import { createCustomMemo } from "lib_2"
+import { createCustomMemo, isServer as _isServer } from "lib_2"
 import { describe, it, expect } from "vitest"
 import { createMemo, createRoot, createSignal } from "solid-js"
+import { isServer } from "solid-js/web"
 
 describe("reactivity in deps", () => {
   it("local", () =>
@@ -22,4 +23,14 @@ describe("reactivity in deps", () => {
       expect(n(), "after change").toBe(memo())
       dispose()
     }))
+})
+
+describe("is server", () => {
+  it("local", () => {
+    expect(isServer).toBe(false)
+  })
+
+  it("deps", () => {
+    expect(_isServer).toBe(false)
+  })
 })
