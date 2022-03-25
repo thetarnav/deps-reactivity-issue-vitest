@@ -4,7 +4,8 @@ specifiers:
   jsdom: ^19.0.0
   lib_2: file:../lib_2
   solid-js: ^1.3.13
-  vitest: ^0.7.7
+  vite: ^2.8.6
+  vitest: ^0.7.11
 
 dependencies:
   lib_2: link:../lib_2
@@ -12,7 +13,8 @@ dependencies:
 
 devDependencies:
   jsdom: 19.0.0
-  vitest: 0.7.7_jsdom@19.0.0
+  vite: 2.8.6
+  vitest: 0.7.11_jsdom@19.0.0
 
 packages:
 
@@ -743,9 +745,9 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.7.7_jsdom@19.0.0:
-    resolution: {integrity: sha512-xU7BTB7T7GbcjFBdbZAAp/dIQUwn8bygI+cbw6Yq1oXj60oGRJ+nJ7AXvSOJyaHMTmglEoaqazyDGnCHJBXftw==}
-    engines: {node: '>=v14.19.1'}
+  /vitest/0.7.11_jsdom@19.0.0:
+    resolution: {integrity: sha512-xCEUBCpqiIVhUFIMCKKXDZ/bcPLk2EhPmTFA9qw+Kf+B2d/gm3ZBdUAMa3jIZNZ/d3esji5H6XZPNAk//9K4Kw==}
+    engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
       '@vitest/ui': '*'
